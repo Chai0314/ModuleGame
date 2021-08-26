@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推箱子</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+        }
+        #game {
+            position: relative;
+            margin: 0 auto;
+            top: 2rem;
+            /* background-color: aqua; */
+        }
+
+        .item {
+            position: absolute;
+            box-sizing: border-box;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .wall{
+            background-image: url(./imgs/wall.jpg);
+        }
+        .box{
+            background-image: url(./imgs/box.png);
+        }
+        .target_box{
+            background-color: yellowgreen;
+        }
+        .over_box{
+            background-image: url(./imgs/over_box.png);
+        }
+        .player{
+            background-image: url(./imgs/player.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game">
+    </div>
+    <script src="./module/main.js" type="module"></script>
+</body>
+
+</html>
